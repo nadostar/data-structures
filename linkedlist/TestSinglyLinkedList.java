@@ -64,6 +64,7 @@ public class TestSinglyLinkedList {
         SinglyLinkedList.Node found = KthToLast(ll.getHead(), k, r);
         System.out.println(found.data);
 
+        // time: O(n) space: O(1)
         System.out.println("\nTest with recursion from last find k case3 ");
         ll = new SinglyLinkedList<Integer>();
         ll.append(1);
