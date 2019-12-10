@@ -4,11 +4,12 @@
 public class SinglyLinkedList<T> {
     private Node head;
 
-    class Node<T> {
-        private T data;
-        private Node next;
+    static class Node<T> {
+        T data;
+        Node next;
 
-        public Node() {}
+        public Node() {
+        }
 
         public Node(T data) {
             this.data = data;
@@ -17,6 +18,10 @@ public class SinglyLinkedList<T> {
 
     public SinglyLinkedList() {
         this.head = new Node();
+    }
+
+    public Node getHead() {
+        return this.head;
     }
 
     public void append(T data) {
@@ -52,6 +57,23 @@ public class SinglyLinkedList<T> {
         }
 
         System.out.println(n.data);
+    }
+
+    public void removeDups() {
+        Node n = this.head;
+
+        while (n != null && n.next != null) {
+            Node runner = n;
+            while (runner.next != null) {
+                if (n.data == runner.next.data) {
+                    runner.next = runner.next.next;
+                } else {
+                    runner = runner.next;
+                }
+            }
+
+            n = n.next;
+        }
     }
 
 }
