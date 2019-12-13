@@ -9,6 +9,8 @@
  * Preorder (Root, Left, Right): 1,2,4,5,3
  * Postorder (Left, Right, Root): 4,5,2,3,1
  * 
+ * DFS (Depth First Search)
+ * 
  * TestBinaryTree
  */
 class Node {
