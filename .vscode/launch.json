@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestQuickSort",
+            "request": "launch",
+            "mainClass": "TestQuickSort"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestQueue",
+            "request": "launch",
+            "mainClass": "TestQueue"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestStack",
+            "request": "launch",
+            "mainClass": "TestStack"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RemoveDuplicationLinkedList",
+            "request": "launch",
+            "mainClass": "RemoveDuplicationLinkedList"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSinglyLinkedList",
+            "request": "launch",
+            "mainClass": "TestSinglyLinkedList"
+        }
+    ]
+}
